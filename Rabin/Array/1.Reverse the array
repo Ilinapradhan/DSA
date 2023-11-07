@@ -1,0 +1,16 @@
+string reverseWord(string str)
+    {
+        // Your code goes here
+        int st =0;
+        int en = str.length()-1;
+        while(st<=en){
+            swap(str[st],str[en]);
+            st++;
+            en--;
+        }
+        return str;
+    }
+
+
+ // Time Complexity: O(|S|)
+ // Auxiliary Space: O(1)
