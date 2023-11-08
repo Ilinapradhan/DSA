@@ -31,3 +31,4 @@ void rearrange(int arr[], int n) {
         }
     }
 	}
+//T(n)=O(N)
