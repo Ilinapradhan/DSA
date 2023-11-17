@@ -1,0 +1,21 @@
+ long long maxSubarraySum(int arr[], int n){
+        
+        // Your code here
+        long long int sum=0;
+        long long int max_sum = arr[0];
+        
+        for(long long int i=0;i<n;i++)
+        {
+            sum += arr[i];
+            
+            max_sum = max(max_sum,sum);
+            
+            if(sum<0) sum = 0;
+        }
+        
+        return max_sum;
+        
+    }
+
+// Time Complexity: O(N)
+// Auxiliary Space: O(1)
